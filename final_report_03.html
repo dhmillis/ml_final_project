@@ -137,7 +137,10 @@ predictions &lt;- predict(modelFit, newdata=tst_dat_pca_labeled)</code></pre>
 <div id="evaluation-of-models" class="section level2">
 <h2>Evaluation of Models</h2>
 <p>We generated a confusion matrix comparing the labels predicted for the experimental test set to the known labels. The accuracy of the four models is as follows:</p>
-<p>k-nearest neighbor: 56% SVM, kernel function = dot product: 56% SVM, kernel function = Gaussian: 91% Random forest: 97%</p>
+<p>k-nearest neighbor: 56%</p>
+<p>SVM, kernel function = dot product: 56%</p>
+<p>SVM, kernel function = Gaussian: 91%</p>
+<p>Random forest: 97%</p>
 <p>We selected the random forest model as the one we would use for labeling the unlabeled instances in the original data set. The random forest model the highest accuracy (97%). We estimated the out of sample error rate for this model at 3%.</p>
 </div>
 <div id="final-model-creation" class="section level2">
